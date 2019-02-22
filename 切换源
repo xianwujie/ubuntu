@@ -1,0 +1,31 @@
+# ubuntu18.04上的方法
+sudo vim /etc/apt/sources.list
+# 如果没有vim可以先安装vim
+sudo apt-get vim
+# 如果无法安装vim ，就用vi打开
+sudo vi /etc/apt/sources.list
+# 最好用vim来打开，操作方便，如果用vi打开，将会出现一些问题。
+# 其次就是可以把原来的全部删掉，然后再复制下面这段内容。
+按A插入，结束后按esc : wq! 保存退出就好
+————————————————————————
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+# 最后更新一下源
+sudo apt-get update
