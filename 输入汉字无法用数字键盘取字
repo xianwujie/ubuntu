@@ -1,0 +1,5 @@
+ubuntu 中文输入法。汉字无法用数字键盘取字的解决方案。
+
+
+rm -rf ~/.cache/ibus/libpinyin 
+ ibus restart
