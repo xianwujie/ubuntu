@@ -1,0 +1,14 @@
+# 参考：https://my.oschina.net/u/2306127/blog/1626082
+# 先不插U盘，打开终端，输入命令：
+tail -f /var/log/syslog
+
+# 然后插入U盘，输出日期时间等信息，如下：
+Jul  8 16:44:50 cslouis-pc kernel: [15595.155904] FAT: Filesystem error (dev sdb4)
+Jul  8 16:44:50 cslouis-pc kernel: [15595.155905]    fat_get_cluster: invalid cluster chain (i_pos 0)
+
+# 输入以下命令，U盘的路径和名字一定要对，我这里一直有问题是因为U盘名是 ‘name' 而不是 name
+umount /media/ZCF(ZCF是你的U盘名，可以在media目录下用ls查看)
+
+# 修复U盘文件系统故障
+sudo dosfsck -v -a /dev/sdb4
+# 然后U盘就修复好了，重新插入即可使用
