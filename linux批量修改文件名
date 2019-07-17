@@ -1,0 +1,5 @@
+文件名添加后缀
+ rename 's/$/\.wav/' *
+ 修改文件名
+ rename 's/shan3xi_train_speaker01_/s/' *
+ 
