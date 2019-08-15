@@ -1,2 +1,12 @@
-主要是收集音频的数据集，其中也有其他的数据集：
-https://www.datasetlist.com/
+主要是收集音频的数据集，其中也有其他的数据集：https://www.datasetlist.com/
+NVIDIA驱动下载：https://www.nvidia.com/Download/index.aspx?lang=cn
+NVIDIA驱动安装总结：https://blog.csdn.net/tjuyanming/article/details/80862290
+保存和载入模型方法：http://orchome.com/1560#/collapse-1113
+音频处理：http://www.cnblogs.com/cpuimage/category/1147362.html
+音标：https://en.wikipedia.org/wiki/ARPABET
+PYTORCH：https://ptorch.com/news/11.html
+cmudict合成音标：http://www.speech.cs.cmu.edu/tools/lextool.html
+cnn lstm keras: https://www.jiqizhixin.com/articles/2019-02-11-8
+基于tensorflowlite在移动端的语音：https://www.infoq.cn/article/speaker-dentification-based-on-tensorflowlite
+牛津字典：https://www.oxfordlearnersdictionaries.com/definition/english/tuesday?q=TUESDAY
+搜索论文的网站：https://distill.pub/
